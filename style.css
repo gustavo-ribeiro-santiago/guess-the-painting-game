@@ -13,6 +13,7 @@
   fill-opacity: 50%;
   background-size: cover;
   background-repeat: repeat;
+  border-radius: 10%;
   /* position */
   position: fixed;
   z-index: 10;
