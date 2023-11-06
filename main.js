@@ -194,9 +194,14 @@ var rodadaTerminou = false; // armazena se rodada atual já terminou para inviab
 function mostrarPopUpInicio() {
   let fundoOfuscado = document.createElement("div");
   fundoOfuscado.id = "fundoOfuscado";
+  fundoOfuscado.classList.add("fixed", "top-0", "left-0", "bg-black/50", "blur-sm", "backdrop-blur-sm", "w-full", 
+  "h-full", "z-10");
   document.getElementById("corpoSite").appendChild(fundoOfuscado);
   let popUp = document.createElement("div");
   popUp.id = "popUpInicioDoJogo";
+  popUp.classList.add("rounded-sm", "flex", "flex-col", "text-lg", "fixed", "z-10", "p-2", "font-bold", "text-center",
+  "h-4/6", "w-4/6", "top-[16.6%]", "left-[16.6%]", "bg-cover", "bg-repeat", "border-2", "border-solid", "border-gray-500",
+  "bg-[url('./../assets/rifqi-ali-ridho-VlXlW77swwY-unsplash.jpg')]", "justify-evenly", "align-baseline");
   document.getElementById("corpoSite").appendChild(popUp);
   let bemVindoTitulo = document.createElement("div");
   bemVindoTitulo.innerText = `Welcome to the Guess the Painting Game! 
@@ -206,9 +211,11 @@ function mostrarPopUpInicio() {
   Try to discover the names and artists of the hidden paintings. 
 
   Be aware that the more you see of the painting, the fewer points you can score.`;
+  bemVindoTitulo.classList.add("bg-slate-50", "opacity-75", "p-2", "rounded-sm");
   popUp.appendChild(bemVindoTitulo);
   let botaoIniciarJogo = document.createElement("button");
   botaoIniciarJogo.classList.add("botoes");
+  botaoIniciarJogo.classList.add("rounded-sm", "border-slate-900");
   botaoIniciarJogo.innerText = "Start Game";
   popUp.appendChild(botaoIniciarJogo);
   botaoIniciarJogo.addEventListener("click", () => {
@@ -259,7 +266,7 @@ function adicionarOpcoesDeResposta() {
   for (let numeroOpcao = 0; numeroOpcao < 6; numeroOpcao++) {
     opcoesRotuloElementoHTML = document.createElement("button");
     opcoesRotuloElementoHTML.classList.add("botoes");
-    opcoesRotuloElementoHTML.classList.add("opcoesDeResposta");
+    opcoesRotuloElementoHTML.classList.add("opcoesDeResposta", "rounded-sm");
     let pinturaOpcao = opcoesDeResposta.sample();
     opcoesDeResposta.splice(opcoesDeResposta.indexOf(pinturaOpcao), 1);
     opcoesRotuloElementoHTML.innerText =
@@ -411,7 +418,7 @@ function adicionarBotaoMostrar() {
   // Esta função adiciona o botão de mostrar mais da pintura
   document.getElementById(
     "botaoShowConteiner"
-  ).innerHTML += `<button id="botaoShow" class="botoes" onclick="mostrarPintura()"> Show more of the painting </button>`;
+  ).innerHTML += `<button id="botaoShow" class="botoes rounded-sm" onclick="mostrarPintura()"> Show more of the painting </button>`;
 }
 
 function renderizarNovamente() {
@@ -444,6 +451,7 @@ function atualizarScore() {
   } else {
     scoreElementoHTML = document.createElement("div");
     scoreElementoHTML.id = "score";
+    scoreElementoHTML.classList.add("rounded-sm");
     document.getElementById("scoreConteiner").appendChild(scoreElementoHTML);
   }
   scoreElementoHTML.innerText = `Potencial score for this round: ${scorePotencialDaRodada}
