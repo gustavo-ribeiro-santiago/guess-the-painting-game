@@ -18,14 +18,13 @@ In this game, you will be presented with a partially obscured painting, and your
 
 5. Keep playing and trying to earn as many points as possible.
 
-6. The game ends when you've guessed all the paintings or when you decide to stop playing.
+6. The game ends when you've guessed all of the 12 paintings.
 
 ## Scoring
 
 Your score is calculated based on the following criteria:
 
 - Each round has a potential maximum score based on how much of the painting you've revealed.
-- The actual score you earn for a round is determined by when you guess it correctly.
 - If you've guessed it correctly without revealing any more of the painting, you will earn 1000 points.
 - After each click to show more of the painting, your potential score for the round decreases 250 points.
 - After 3 clicks, the painting is fully revealed and you can only earn 250 points if you choose its name and artist correctly.
@@ -39,7 +38,7 @@ To run the project locally, you can simply clone the repository and then, open t
 
 ## Contributing
 
-If you'd like to contribute to this project, feel free to fork the repository and submit a pull request with your changes.Contributions that improve the game, add new features, or fix bugs are welcome.
+If you'd like to contribute to this project, feel free to fork the repository and submit a pull request with your changes.Contributions that improve the game, add new features, or fix bugs are welcome!
 
 
 Enjoy the game, and have fun guessing the paintings!
