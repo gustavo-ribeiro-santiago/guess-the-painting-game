@@ -38,7 +38,6 @@ To run the project locally, you can simply clone the repository and then, open t
 
 ## Contributing
 
-If you'd like to contribute to this project, feel free to fork the repository and submit a pull request with your changes.Contributions that improve the game, add new features, or fix bugs are welcome!
-
+If you'd like to contribute to this project, feel free to fork the repository and submit a pull request with your changes.
 
 Enjoy the game, and have fun guessing the paintings!
